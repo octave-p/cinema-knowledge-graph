@@ -12,8 +12,7 @@ cinema-knowledge-graph/
 ├── TD1_crawling/          # Web crawling & NLP relation extraction
 ├── TD4_kb_alignment/      # RDF modeling, Wikidata alignment & KB expansion
 ├── TD5_reasoning_kge/     # SWRL reasoning (OWLReady2) & KGE training (PyKEEN)
-├── TD6_rag/               # SPARQL generation RAG system (Mistral + rdflib)
-└── report/                # Final PDF report
+└── TD6_rag/               # SPARQL generation RAG system (Mistral + rdflib)
 ```
 
 ---
@@ -68,8 +67,40 @@ ollama serve
 
 ---
 
-## 🚀 Running the RAG Demo
+## 🖥️ Hardware Requirements
 
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| RAM | 8 GB | 16 GB |
+| GPU | None (CPU fallback) | CUDA-compatible GPU (for PyKEEN) |
+| Disk space | ~2 GB | ~5 GB (for full expanded KB) |
+| OS | Windows / Linux / macOS | Linux / macOS |
+
+> **Note:** The KGE training step (`TD5`) will run significantly faster with a CUDA GPU. The RAG demo (`TD6`) runs Mistral locally via Ollama, which requires at least 8 GB of RAM and benefits from a GPU for acceptable inference speed.
+
+---
+
+## 🚀 How to Run Each Module
+
+### TD1 — Crawling
+```bash
+cd TD1_crawling
+jupyter notebook td1.ipynb
+```
+
+### TD4 — KB Alignment
+```bash
+cd TD4_kb_alignment
+jupyter notebook td4.ipynb
+```
+
+### TD5 — Reasoning & KGE
+```bash
+cd TD5_reasoning_kge
+jupyter notebook td5_WebDatamining.ipynb
+```
+
+### TD6 — RAG Demo
 ```bash
 cd TD6_rag
 python td6.py
@@ -84,6 +115,10 @@ The system prints both the baseline LLM answer and the SPARQL-generated result f
 
 ---
 
+## RAG CLI Demo — Question: "Who directed Inception?"
+![RAG demo screenshot](TD6_rag/rag_demo_screenshot.png)
+---
+
 ## 📊 Key Results
 
 - **Corpus size:** 141,442 words across 8 Wikipedia pages
@@ -92,12 +127,6 @@ The system prints both the baseline LLM answer and the SPARQL-generated result f
 - **Final KB size:** 99,106 triples, 66,864 entities
 - **Best KGE model:** TransE (MRR: 0.1683)
 - **RAG success rate:** 1/5 fully correct (Q1), 3/5 syntactically valid but semantically incorrect, 1/5 syntax crash with partial self-repair
-
----
-
-## 📄 Report
-
-The full written report is available in [`report/final_report_WebDatamining.pdf`](./report/final_report_WebDatamining.pdf).
 
 ---
 

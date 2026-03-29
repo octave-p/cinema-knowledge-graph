@@ -1,0 +1,23 @@
+# Core dependencies
+httpx
+trafilatura
+spacy
+rdflib
+requests
+owlready2
+
+# KGE training
+pykeen
+torch
+
+# Visualization
+matplotlib
+sklearn
+
+# Jupyter
+jupyterlab
+notebook
+ipykernel
+
+# NLP model (run separately)
+# python -m spacy download en_core_web_trf
