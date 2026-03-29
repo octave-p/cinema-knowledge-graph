@@ -131,12 +131,6 @@ The system prints both the baseline LLM answer and the SPARQL-generated result f
 
 ---
 
-## 📄 Report
-
-The full written report is available in [`report/final_report_WebDatamining.pdf`](./report/final_report_WebDatamining.pdf).
-
----
-
 ## 🗂️ Technologies
 
 `Python` · `spaCy` · `rdflib` · `Wikidata API` · `OWLReady2` · `Pellet` · `PyKEEN` · `Mistral` · `Ollama` · `SPARQL 1.1` · `Turtle / N-Triples`
