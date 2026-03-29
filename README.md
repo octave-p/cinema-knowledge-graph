@@ -68,8 +68,40 @@ ollama serve
 
 ---
 
-## 🚀 Running the RAG Demo
+## 🖥️ Hardware Requirements
 
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| RAM | 8 GB | 16 GB |
+| GPU | None (CPU fallback) | CUDA-compatible GPU (for PyKEEN) |
+| Disk space | ~2 GB | ~5 GB (for full expanded KB) |
+| OS | Windows / Linux / macOS | Linux / macOS |
+
+> **Note:** The KGE training step (`TD5`) will run significantly faster with a CUDA GPU. The RAG demo (`TD6`) runs Mistral locally via Ollama, which requires at least 8 GB of RAM and benefits from a GPU for acceptable inference speed.
+
+---
+
+## 🚀 How to Run Each Module
+
+### TD1 — Crawling
+```bash
+cd TD1_crawling
+jupyter notebook td1.ipynb
+```
+
+### TD4 — KB Alignment
+```bash
+cd TD4_kb_alignment
+jupyter notebook td4.ipynb
+```
+
+### TD5 — Reasoning & KGE
+```bash
+cd TD5_reasoning_kge
+jupyter notebook td5_WebDatamining.ipynb
+```
+
+### TD6 — RAG Demo
 ```bash
 cd TD6_rag
 python td6.py
@@ -81,6 +113,16 @@ You will be prompted to type natural language questions such as:
 - *Who are the cast members of The Godfather?*
 
 The system prints both the baseline LLM answer and the SPARQL-generated result from the local graph.
+
+---
+
+## 📸 Screenshots
+
+### RAG CLI Demo — Question: "Who directed Inception?"
+![RAG demo screenshot](TD6_rag/rag_demo_screenshot.png)
+
+### t-SNE Projection of TransE Embeddings
+![t-SNE clustering of KGE embeddings](TD5_reasoning_kge/tsne_clustering.png)
 
 ---
 
