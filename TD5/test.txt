@@ -1,0 +1,8 @@
+wd:Q103474	http://www.wikidata.org/prop/direct/P162	http://www.wikidata.org/entity/Q2001
+wd:Q2001	http://www.wikidata.org/prop/direct/P166	http://www.wikidata.org/entity/Q787148
+wd:Q104123	http://www.wikidata.org/prop/direct/P495	http://www.wikidata.org/entity/Q30
+wd:Q2001	http://www.wikidata.org/prop/direct/P166	http://www.wikidata.org/entity/Q787131
+wd:Q25188	http://www.wikidata.org/prop/direct/P166	http://www.wikidata.org/entity/Q393686
+wd:Q25188	http://www.wikidata.org/prop/direct/P162	http://www.wikidata.org/entity/Q25191
+wd:Q41148	http://www.wikidata.org/prop/direct/P166	http://www.wikidata.org/entity/Q179808
+wd:Q104123	http://www.wikidata.org/prop/direct/P161	http://www.wikidata.org/entity/Q514913

@@ -1,0 +1,3 @@
+wd:Q103474	http://www.wikidata.org/prop/direct/P166	http://www.wikidata.org/entity/Q3414212
+wd:Q25188	http://www.wikidata.org/prop/direct/P364	http://www.wikidata.org/entity/Q1860
+wd:Q25191	http://www.wikidata.org/prop/direct/P166	http://www.wikidata.org/entity/Q102427
