@@ -116,14 +116,8 @@ The system prints both the baseline LLM answer and the SPARQL-generated result f
 
 ---
 
-## 📸 Screenshots
-
-### RAG CLI Demo — Question: "Who directed Inception?"
+## RAG CLI Demo — Question: "Who directed Inception?"
 ![RAG demo screenshot](TD6_rag/rag_demo_screenshot.png)
-
-### t-SNE Projection of TransE Embeddings
-![t-SNE clustering of KGE embeddings](TD5_reasoning_kge/tsne_clustering.png)
-
 ---
 
 ## 📊 Key Results
