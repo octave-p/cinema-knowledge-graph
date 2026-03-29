@@ -12,8 +12,7 @@ cinema-knowledge-graph/
 ├── TD1_crawling/          # Web crawling & NLP relation extraction
 ├── TD4_kb_alignment/      # RDF modeling, Wikidata alignment & KB expansion
 ├── TD5_reasoning_kge/     # SWRL reasoning (OWLReady2) & KGE training (PyKEEN)
-├── TD6_rag/               # SPARQL generation RAG system (Mistral + rdflib)
-└── report/                # Final PDF report
+└── TD6_rag/               # SPARQL generation RAG system (Mistral + rdflib)
 ```
 
 ---
