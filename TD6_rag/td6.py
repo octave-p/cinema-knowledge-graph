@@ -31,9 +31,8 @@ def load_graph(ttl_path: str) -> Graph:
     print(f"Loaded {len(g)} triples from {ttl_path}")
     return g
 
-# ----------------------------
-# 2) Build a small schema summary
-# ----------------------------
+# Build a schema summary
+
 def get_prefix_block(g: Graph) -> str:
     defaults = {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
